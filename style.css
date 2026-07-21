@@ -38,7 +38,7 @@ nav{
     justify-content:space-between;
     align-items:center;
 
-    padding:20px 80px;
+    padding:20px 30px;
 }
 
 .logo{
@@ -65,12 +65,12 @@ nav ul li a{
 }
 
 .hero-content h1{
-    font-size:60px;
+    font-size:36px;
     margin-bottom:20px;
 }
 
 .hero-content p{
-    font-size:22px;
+    font-size:18px;
     margin-bottom:30px;
 }
 
@@ -106,10 +106,12 @@ button:hover{
 }
 
 .video-container video {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 15px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    height: auto;
 }
 
 .about{
@@ -118,14 +120,14 @@ button:hover{
     align-items:center;
     gap:50px;
 
-    padding:100px 80px;
+    padding:60px 20px;
     background:#f8f8f8;
     color:#333;
 }
 
 .about-image img{
-    width:600px;
-    height:700px ;
+    width: 100%;
+    height: auto;
     border-radius:10px;
 }
 
@@ -159,7 +161,7 @@ button:hover{
 }
 
 .menu{
-    padding:100px 80px;
+    padding:60px 20px;
     background:#ffffff;
     text-align:center;
 }
@@ -215,7 +217,7 @@ button:hover{
 }
 
 .gallery{
-    padding:100px 80px;
+    padding:60px 20px;
     background:#f8f8f8;
     text-align:center;
 }
@@ -228,7 +230,7 @@ button:hover{
 
 .gallery-container{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
@@ -246,7 +248,7 @@ button:hover{
 }
 
 .reservation{
-    padding:100px 80px;
+    padding:60px 20px;
     background:#fff;
     text-align:center;
 }
@@ -357,7 +359,30 @@ html{
 @media(max-width:768px){
 
     nav{
+        padding: 15px;
         flex-direction:column;
+    }
+    .logo{
+        font-size: 26px;
+    }
+    button{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    nav ul li{
+        margin: 10px 0;
+    }
+    .hero{
+        padding: 20px;
+    }
+
+    .hero-content h1{
+        font-size: 36px;
+    }
+
+    .hero-content p{
+        font-size: 18px;
     }
 
     nav ul{
@@ -365,13 +390,24 @@ html{
         margin-top:20px;
     }
 
+    .video-container{
+        padding: 20px;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 350px;
+    }
+
     .about,
     .contact{
+        padding: 50px 20px;
         flex-direction:column;
     }
 
     .about-image img{
         width:100%;
+        height: auto;
     }
 
     .contact-info,
@@ -380,12 +416,21 @@ html{
     }
 
     .gallery-container{
-        grid-template-columns:1fr;
+        grid-template-columns:repeat(auto-fit,minmax(250px, 1fr));
     }
 
     .menu-container{
         flex-direction:column;
         align-items:center;
+    }
+
+    .contact-info h2,
+    .about-text h2,
+    .menu h2,
+    .gallery h2,
+    .reservation h2,
+    .video-section h2{
+        font-size: 30px;
     }
 
 }   
