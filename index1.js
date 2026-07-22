@@ -43,3 +43,32 @@ topBtn.addEventListener("click", function(){
     });
 
 });
+
+
+emailjs.init("czTbs9co8SHs3rH96");
+
+
+document.getElementById("reservationForm")
+.addEventListener("submit", function(event){
+
+event.preventDefault();
+
+
+emailjs.sendForm(
+"service_to3eqc8",
+"template_zlphqsu",
+this
+
+).then(function(){
+
+alert("Thank you! Your table has been reserved.");
+
+}).catch(function(error){
+
+alert("Something went wrong.");
+
+console.log(error);
+
+});
+
+});
