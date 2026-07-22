@@ -165,13 +165,14 @@
 
     <form id="reservationForm">
 
-        <input type="text" id="name" placeholder="Your Name">
+        <input type="text" id="name" name="name" placeholder="Your Name">
 
-        <input type="email" id="email" placeholder="Email Address">
-        <input type="tel" id="phone" placeholder="Your Contact Number">
-        <input type="time" id="time" placeholder="Reservation Time">
+        <input type="email" id="email"  name="email" placeholder="Email Address">
+        <input type="tel" id="phone"  name="phone" placeholder="Your Contact Number">
+        <input type="time" id="time"  name="time" placeholder="Reservation Time">
 
-         <input type="date" id="date">
+         <input type="date" name="date" id="date">
+
 
         <select id="guests">
             <option value="">Select Guests</option>
@@ -229,6 +230,8 @@
 <button id="topBtn">↑</button>
 
 <script src="index1.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 </body>
 </html>
