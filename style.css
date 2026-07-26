@@ -257,6 +257,10 @@ button:hover{
     text-align:center;
 }
 
+#reservation{
+    scroll-margin-top:100px;
+}
+
 .reservation h2{
     font-size:42px;
     color:#d4a017;
