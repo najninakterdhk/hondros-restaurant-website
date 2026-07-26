@@ -14,6 +14,7 @@ body{
 }
 
 .hero{
+    padding-top:90px;
     height:100vh;
 
     background-image:
@@ -29,8 +30,9 @@ body{
 }
 
 nav{
-    position:absolute;
+    position:fixed;
     top:0;
+    left:0;
     width:100%;
     background-color: maroon;
 
@@ -39,6 +41,7 @@ nav{
     align-items:center;
 
     padding:20px 30px;
+    Z-index:1000;
 }
 
 .logo{
@@ -252,6 +255,7 @@ button:hover{
 }
 
 .reservation{
+    padding-top:120px;
     padding:60px 20px;
     background:#fff;
     text-align:center;
